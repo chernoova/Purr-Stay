@@ -1,7 +1,0 @@
-position: 4 # для сортировки папки в сайдбаре
-label: UseCases # название пункта меню в сайдбаре
-collapsible: true
-collapsed: true
-link:
-  type: generated-index
-  title: UseCases # Заголовок на странице
