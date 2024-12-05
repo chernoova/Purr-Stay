@@ -49,7 +49,7 @@ rectangle "Модерация отзывов" {
 @enduml
 ```
 
-![image 1.png](image 1.png)
+![image_1.png](image_1.png)
 
 
 

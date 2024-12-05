@@ -26,7 +26,7 @@
 
 1. **Публикация**: В случае успешной проверки отзыв и рейтинг становятся доступными другим пользователям на платформе
 
-![image 1.png](image 1.png)
+![image_1.png](image_1.png)
 
 ссылка на бизнес-процесс в camunda: [https://modeler.camunda.io/diagrams/deea720a-ed49-4a0f-9ab4-7c746b368dbc--автоматическая-модерация?v=716,354,1](https://modeler.camunda.io/diagrams/deea720a-ed49-4a0f-9ab4-7c746b368dbc--автоматическая-модерация?v=716,354,1)
 
@@ -56,7 +56,7 @@
 
     - Пользователь получает **уведомление** о принятом решении (публикация или удаление отзыва)
 
-![image 2.png](image 2.png)
+![image_2.png](image_2.png)
 
 ссылка на бизнес-процесс в camunda: [https://modeler.camunda.io/share/0d014891-7699-4f32-8caa-452bd9c2757c](https://modeler.camunda.io/share/0d014891-7699-4f32-8caa-452bd9c2757c)
 
