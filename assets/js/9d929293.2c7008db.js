@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[268],{2417:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"API","slug":"/category/api","permalink":"/Purr-Stay/docs/category/api","sidebar":"tutorialSidebar","navigation":{"next":{"title":"model","permalink":"/Purr-Stay/docs/API/model"}}}}')}}]);

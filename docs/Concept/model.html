@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Concept/model" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">model | Purr&amp;Stay</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://chernoova.github.io/Purr-Stay/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://chernoova.github.io/Purr-Stay/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://chernoova.github.io/Purr-Stay/docs/Concept/model"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="model | Purr&amp;Stay"><meta data-rh="true" name="description" content="1. Описание проблемы"><meta data-rh="true" property="og:description" content="1. Описание проблемы"><link data-rh="true" rel="icon" href="/Purr-Stay/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://chernoova.github.io/Purr-Stay/docs/Concept/model"><link data-rh="true" rel="alternate" href="https://chernoova.github.io/Purr-Stay/docs/Concept/model" hreflang="en"><link data-rh="true" rel="alternate" href="https://chernoova.github.io/Purr-Stay/docs/Concept/model" hreflang="x-default"><script src="https://cdn.jsdelivr.net/npm/docusaurus-plugin-drawio/viewer.min.js"></script><link rel="stylesheet" href="/Purr-Stay/assets/css/styles.3f56d5eb.css">
+<script src="/Purr-Stay/assets/js/runtime~main.ce3109e1.js" defer="defer"></script>
+<script src="/Purr-Stay/assets/js/main.0e67af63.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Purr-Stay/"><div class="navbar__logo"><img src="/Purr-Stay/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Purr-Stay/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Purr&amp;Stay</b></a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/chernoova/Purr-Stay" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/api">API</a><button aria-label="Expand sidebar category &#x27;API&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/Purr-Stay/docs/category/концепция-проекта">Концепция проекта</a><button aria-label="Collapse sidebar category &#x27;Концепция проекта&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Purr-Stay/docs/Concept/model">model</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Purr-Stay/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/uml-диаграммы">UML диаграммы</a><button aria-label="Expand sidebar category &#x27;UML диаграммы&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/требования-к-системе">Требования к системе</a><button aria-label="Expand sidebar category &#x27;Требования к системе&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/моделирование-процессов-в-bpmn">Моделирование процессов в BPMN</a><button aria-label="Expand sidebar category &#x27;Моделирование процессов в BPMN&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/usecases">UseCases</a><button aria-label="Expand sidebar category &#x27;UseCases&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/интеграция-с-пользователем">Интеграция с пользователем</a><button aria-label="Expand sidebar category &#x27;Интеграция с пользователем&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Purr-Stay/docs/category/все-про-базы-данных">Все про базы данных</a><button aria-label="Expand sidebar category &#x27;Все про базы данных&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Purr-Stay/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/Purr-Stay/docs/category/концепция-проекта"><span itemprop="name">Концепция проекта</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">model</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>model</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-описание-проблемы"><strong>1. Описание проблемы</strong><a href="#1-описание-проблемы" class="hash-link" aria-label="Direct link to 1-описание-проблемы" title="Direct link to 1-описание-проблемы">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="проблема"><strong>Проблема</strong><a href="#проблема" class="hash-link" aria-label="Direct link to проблема" title="Direct link to проблема">​</a></h3>
+<p>Большинство владельцев домашних животных сталкиваются с трудностями, когда им нужно временно уехать из дома на некоторое время (Например, отпуск, командировка, переезд и т.д.), но они не могут взять своих питомцев с собой. Не у всех есть близкие люди или друзья, готовые присмотреть за животным в их отсутствие, а специализированные гостиницы для животных часто дорогие и могут вызывать стресс у питомцев из-за незнакомой обстановки. В то же время есть люди, которые готовы помочь и присматривать за питомцем.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="потребности-и-боли-целевой-аудитории"><strong>Потребности и боли целевой аудитории</strong><a href="#потребности-и-боли-целевой-аудитории" class="hash-link" aria-label="Direct link to потребности-и-боли-целевой-аудитории" title="Direct link to потребности-и-боли-целевой-аудитории">​</a></h3>
+<ol>
+<li>
+<p>Владельцы животных нуждаются в надежном и удобном способе найти временного &quot;опекуна&quot;, который сможет присмотреть за их питомцем в домашних условиях, минимизируя стресс для животного. Им важно, чтобы &quot;опекун&quot; был проверенным и имел высокий рейтинг и положительные отзывы. Система рейтинга будет работать не только для &quot;опекунов&quot;, но и для самих владельцев и их питомцев, чтобы каждый участник знал, с кем имеет дело. Это поможет &quot;опекунам&quot; лучше понять, какого питомца они берут, какие у него поведенческие особенности и насколько хозяин надежен в своих обязательствах.</p>
+</li>
+<li>
+<p>Люди, готовые взять животное на передержку, хотят иметь простую в использовании платформу для поиска запросов на передержку, с ясными условиями сотрудничества и прозрачной системой взаимоотношений с владельцами. Для них важна уверенность в том, что животное не принесет проблем, и что хозяин ответственно относится к своему питомцу и условиям передержки. Рейтинг владельцев и животных поможет &quot;опекунам&quot; выбирать подходящих клиентов.</p>
+</li>
+<li>
+<p>Безопасность, доверие и прозрачность — ключевые аспекты. Важно обеспечить честную и прозрачную оплату услуг, чтобы обе стороны могли быть уверены, что финансовые условия соблюдены. Также система должна предусматривать возможность постоянного контроля за состоянием питомца через регулярные фото и видеоотчеты от &quot;опекунов&quot;, что позволит владельцам чувствовать себя спокойно на протяжении всего времени передержки.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="текущие-альтернативы"><strong>Текущие альтернативы</strong><a href="#текущие-альтернативы" class="hash-link" aria-label="Direct link to текущие-альтернативы" title="Direct link to текущие-альтернативы">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="специализированные-гостиницы-для-животных"><strong>Специализированные гостиницы для животных</strong><a href="#специализированные-гостиницы-для-животных" class="hash-link" aria-label="Direct link to специализированные-гостиницы-для-животных" title="Direct link to специализированные-гостиницы-для-животных">​</a></h4>
+<p>В крупных городах России существуют гостиницы для животных, где владельцы могут оставить своих питомцев на время отъезда. В этих заведениях животные содержатся в клетках или вольерах, под наблюдением персонала. Примером таких гостиниц в Москве: ЗооНяня, Каникулы Бонифация.</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>
+<p>Постоянный профессиональный уход за животными</p>
+</li>
+<li>
+<p>Услуги доступны во многих крупных городах</p>
+</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Стресс у животных из-за нахождения в клетках и в незнакомой среде. + Отсутствие домашней обстановки, что может приводить к стрессу животное</p>
+</li>
+<li>
+<p>Высокая стоимость услуг, особенно при длительной передержке или специальном уходе</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="зооняни-и-частные-передержки-через-доски-объявлений"><strong>Зооняни и частные &quot;передержки&quot; через доски объявлений</strong><a href="#зооняни-и-частные-передержки-через- доски-объявлений" class="hash-link" aria-label="Direct link to зооняни-и-частные-передержки-через-доски-объявлений" title="Direct link to зооняни-и-частные-передержки-через-доски-объявлений">​</a></h4>
+<p>Владельцы питомцев пользуются услугами зоонянь, найденных через сайты объявлений (например, Avito). Это индивидуальные люди, которые готовы взять животных на передержку</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>
+<p>Услуги частных зоонянь обычно дешевле гостиниц для животных</p>
+</li>
+<li>
+<p>Возможность найти опекуна поблизости</p>
+</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Нет четкой системы проверки зоонянь и гарантий качества ухода</p>
+</li>
+<li>
+<p>Отсутствие прозрачности в оплате и условиях передержки, что может вызвать недоразумения</p>
+</li>
+<li>
+<p>Сложности с отзывами и рейтингами, что делает выбор &quot;опекуна&quot; ненадежным</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="друзья-и-знакомые"><strong>Друзья и знакомые</strong><a href="#друзья-и-знакомые" class="hash-link" aria-label="Direct link to друзья-и-знакомые" title="Direct link to друзья-и-знакомые">​</a></h4>
+<p>Владельцы могут обращаться за помощью к друзьям или родственникам, чтобы те присмотрели за их питомцем на время отъезда</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>
+<p>Обычно бесплатный уход или на доверительной основе</p>
+</li>
+<li>
+<p>Животное находится в знакомой или домашней обстановке</p>
+</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Друзья или родственники могут не иметь должного опыта или желания заниматься животным</p>
+</li>
+<li>
+<p>Сложности с регулярным использованием такого способа, неудобство от просьбы о помощи</p>
+</li>
+<li>
+<p>Возможны конфликты, если уход за животным окажется не на должном уровне</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="социальные-сети-и-сообщества"><strong>Социальные сети и сообщества</strong><a href="#социальные-сети-и-сообщества" class="hash-link" aria-label="Direct link to социальные-сети-и-сообщества" title="Direct link to социальные-сети-и-сообщества">​</a></h4>
+<p>Владельцы могут искать опекунов через тематические группы в соцсетях, посвященные передержке животных</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>Быстрый и дешевый способ найти &quot;опекуна&quot;</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Отсутствие проверки и надежных механизмов подтверждения качества услуг</p>
+</li>
+<li>
+<p>Нет системы рейтингов, отзывов или контроля условий передержки</p>
+</li>
+<li>
+<p>Неформальные договоренности, что может вызвать риски для безопасности питомца и финансовых обязательств</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="почему-эти-решения-недостаточны"><strong>Почему эти решения недостаточны</strong><a href="#почему-эти-решения-недостаточны" class="hash-link" aria-label="Direct link to почему-эти-решения-недостаточны" title="Direct link to почему-эти-решения-недостаточны">​</a></h2>
+<ul>
+<li>
+<p><strong>Недостаток прозрачности и доверия:</strong> Представленные варианты не предоставляют проверенных данных о людях, предлагающих передержку. Это вызывает риск как для владельцев питомцев (неизвестно, в каких условиях будет находиться их питомец), так и для опекунов (могут столкнуться с проблемным животным или неплатежеспособным владельцем)</p>
+</li>
+<li>
+<p><strong>Отсутствие единой платформы:</strong> Решения раздроблены между разными сервисами — от частных объявлений до соцсетей, что затрудняет поиск и выбор подходящего опекуна или питомца. Нет удобного инструмента, где можно сразу сравнить предложения, получить отзывы, забронировать услугу и оплатить ее</p>
+</li>
+<li>
+<p><strong>Отсутствие контроля и отчетности:</strong> В текущих альтернативах владельцы редко могут быть уверены в том, как их питомец чувствует себя на передержк е, нет механизмов для регулярной отчетности (фото, видео, сообщения), что создает дополнительные беспокойства</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-целевая-аудитория"><strong>2. Целевая аудитория</strong><a href="#2-целевая-аудитория" class="hash-link" aria-label="Direct link to 2-целевая-аудитория" title="Direct link to 2-целевая-аудитория">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="сегменты-аудитории"><strong>Сегменты аудитории</strong><a href="#сегменты-аудитории" class="hash-link" aria-label="Direct link to сегменты-аудитории" title="Direct link to сегменты-аудитории">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы"><strong>Владельцы домашних животных (кошки, собаки и грызуны (хомяки, морские свинки, крысы))</strong><a href="#владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы" class="hash-link" aria-label="Direct link to владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы" title="Direct link to владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы">​</a></h4>
+<ul>
+<li>Это работающие люди, студенты или семьи, которым не с кем оставить питомца, пока они находятся в отъезде</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="опекуны-зооняни"><strong>Опекуны (зооняни)</strong><a href="#опекуны-зооняни" class="hash-link" aria-label="Direct link to опекуны-зооняни" title="Direct link to опекуны-зооняни">​</a></h4>
+<ul>
+<li>Студенты, пенсионеры и любители животных, которые готовы заботится о питомцах (во время отсутствия хозяев)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="потребности-и-ожидания"><strong>Потребности и ожидания</strong><a href="#потребности-и-ожидания" class="hash-link" aria-label="Direct link to потребности-и-ожидания" title="Direct link to потребности-и-ожидания">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="владельцы-животных"><strong>Владельцы животных</strong><a href="#владельцы-животных" class="hash-link" aria-label="Direct link to владельцы-животных" title="Direct link to владельцы-животных">​</a></h4>
+<ul>
+<li>
+<p>Возможность найти опекуна рядом с домом (для минимизации стресса питомца)</p>
+</li>
+<li>
+<p>Возможность найти проверенного опекуна для передержки (рейтинг и отзывы опекуна)</p>
+</li>
+<li>
+<p>Ищут прозрачную систему оплаты, контроль за состоянием животного через регулярные фото и видеоотчеты</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="опекуны-зооняни-1"><strong>Опекуны (зооняни)</strong><a href="#опекуны-зооняни-1" class="hash-link" aria-label="Direct link to опекуны-зооняни-1" title="Direct link to опекуны-зооняни-1">​</a></h4>
+<ul>
+<li>
+<p>Ожидают прозрачные и безопасные условия работы, возможность выбора удобного времени для передержки и прозрачную систему оплаты</p>
+</li>
+<li>
+<p>Возможность работать только с проверенными владельцами и питомцами через систему рейтингов и отзывов</p>
+</li>
+<li>
+<p>Хотят находит запросы на передержку недалеко от дома</p>
+</li>
+<li>
+<p>Возможность выбирать тип животного и срок передержки</p>
+</li>
+<li>
+<p>Возможность найти проверенного владельца и животного (рейтинг и отзывы)</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-стейкхолдеры"><strong>3. Стейкхолдеры</strong><a href="#3-стейкхолдеры" class="hash-link" aria-label="Direct link to 3-стейкхолдеры" title="Direct link to 3-стейкхолдеры">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="стейкхолдеры-продукта"><strong>Стейкхолдеры продукта</strong><a href="#стейкхолдеры-продукта" class="hash-link" aria-label="Direct link to стейкхолдеры-продукта" title="Direct link to стейкхолдеры-продукта">​</a></h3>
+<ol>
+<li>
+<p>Владельцы домашних животных (кошки, собаки и грызуны)</p>
+</li>
+<li>
+<p>Опекуны (зооняни)</p>
+</li>
+<li>
+<p>Разработчики информационной системы</p>
+</li>
+<li>
+<p>Инвесторы (заказчики)</p>
+</li>
+<li>
+<p>Техподдержка</p>
+</li>
+<li>
+<p>Маркетологи</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="роли-стейкхолдеров"><strong>Роли стейкхолдеров</strong><a href="#роли-стейкхолдеров" class="hash-link" aria-label="Direct link to роли-стейкхолдеров" title="Direct link to роли-стейкхолдеров">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="владельцы-домашних-животных"><strong>Владельцы домашних животных</strong><a href="#владельцы-домашних-животных" class="hash-link" aria-label="Direct link to владельцы-домашних-животных" title="Direct link to владельцы-домашних-животных">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Основные пользователи платформы, которые ищут опекунов для временной передержки питомцев</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Их отзывы, рейтинг опекунов и использование платформы определяют качество и успешность сервиса (отзывы и рейтинг в AppStore и Google Play). Их потребности напрямую влияют на развитие функциональности платформы (удобство бронирования времени и даты, прозрачная система оплаты и контроль за питомцем, месторасположение и рейтинг &quot;опекунов&quot; )</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="опекуны-зооняни-2"><strong>Опекуны (зооняни)</strong><a href="#опекуны-зооняни-2" class="hash-link" aria-label="Direct link to опекуны-зооняни-2" title="Direct link to опекуны-зооняни-2">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Исполнители услуг по передержке. Они предоставляют свои  услуги на платформе, заботясь о питомцах</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Их опыт работы в системе: удобство взаимодействия с владельцами и прозрачность условий передержки, честная и прозрачная оплата, рейтинг владельцев и их питомцев. Данные факторы определяют уровень их лояльности к системе. Они также помогают улучшать систему рейтингов и отзывов</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="разработчики-информационной-системы"><strong>Разработчики информационной системы</strong><a href="#разработчики-информационной-системы" class="hash-link" aria-label="Direct link to разработчики-информационной-системы" title="Direct link to разработчики-информационной-системы">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Команда, отвечающая за создание, тестирование и появлений обновлений системы</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Отвечают за техническую реализацию требований стейкхолдеров, обеспечивая стабильную работу платформы и внедрение новых функций для удобства владельцев и опекунов</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="инвесторы-заказчики"><strong>Инвесторы (заказчики)</strong><a href="#инвесторы-заказчики" class="hash-link" aria-label="Direct link to инвесторы-заказчики" title="Direct link to инвесторы-заказчики">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Финансовые участники проекта, заинтересованные в успехе и прибыльности системы</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Инвесторы принимают участие в стратегических решениях, касающихся расширения системы, монетизации услуг и долгосрочного роста бизнеса</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="техподдержка"><strong>Техподдержка</strong><a href="#техподдержка" class="hash-link" aria-label="Direct link to техподдержка" title="Direct link to техподдержка">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Осуществляют помощь пользователям платформы, решают возникающие проблемы и обеспечивают высокое качество сервиса (в эксптренные моменты)</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Влияние на корректировку функций платформы на основе обращений пользователей, улучшая их взаимодейстивие с системой</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="маркетологи">Маркетологи<a href="#маркетологи" class="hash-link" aria-label="Direct link to Маркетологи" title="Direct link to Маркетологи">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Отвечают за продвижение платформы на рынке, привлечение новых пользователей (как владельцев животных, так и опекунов) и повышение узнаваемости бренда</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Маркетологи разрабатывают стратегии по привлечению целевой аудитории, создают рекламные кампании, анализируют поведение пользователей и корректируют маркетинговые активности для повышения конверсии</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-бизнес-цели-и-ключевые-метрики"><strong>4. Бизнес-цели и ключевые метрики</strong><a href="#4-бизнес-цели-и-ключевые-метрики" class="hash-link" aria-label="Direct link to 4-бизнес-цели-и-ключевые-метрики" title="Direct link to 4-бизнес-цели-и-ключевые-метрики">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="основные-бизнес-цели"><strong>Основные бизнес-цели</strong><a href="#основные-бизнес-цели" class="hash-link" aria-label="Direct link to основные-бизнес-цели" title="Direct link to основные-бизнес-цели">​</a></h3>
+<ol>
+<li>
+<p><strong>Увеличение числа пользователей</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретная):</strong> Привлечь 5000 активных пользователей (владельцев животных и опекунов) на платформу в течение первого года</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Количество зарегистрированных пользователей и количество активных бронирований в месяц</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Запуск целевых маркетинговых кампаний, продвижение в социальных сетях и  через партнёрства с блогерами/инфлюенсирами</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Больше пользователей — больше транзакций, что ведет к росту доходов</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная по времени):</strong> Достичь цели к концу первого года работы</p>
+</li>
+</ul>
+<p><strong>Итог: За первый год после запуска платформа должна привлечь 5000 активных пользователей (владельцев и опекунов) благодаря маркетинговому отделу</strong></p>
+</li>
+<li>
+<p><strong>Увеличение дохода через комиссии за услуги в системе</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретная):</strong> Добиться 100 000 рублей ежемесячного дохода через комиссию за услуги передержки</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Средний доход на пользователя и общий доход в месяц</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Оптимизация структуры комиссии, повышение лояльности пользователей через улучшение сервиса</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Рост дохода через комиссионные транзакции поддерживает долгосрочную стабильность платформы</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная по времени):</strong> Достичь целевого дохода в течение первого полугода после выпуска продукта на рынок</p>
+</li>
+</ul>
+<p><strong>Итог: За первые пол года работы система должна достичь ежемесячного дохода в 100 000 рублей через систему комиссий за предоставленные услуги (опека над животными)</strong></p>
+</li>
+<li>
+<p><strong>Улучшение вовлеченности пользователей</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретная):</strong> Установить среднюю оценку сервиса до 4.5 из 5 в App Store и Google Play</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Средний рейтинг пользователей, количество положительных отзывов</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Улучшение системы поддержки, добавление функции отчетности по питомцам (фото и видео съемка)</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Положительные отзывы и высокий рейтинг привлекают новых пользователей и удерживают существующих. Повышают лояльность пользователей</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная по времени):</strong> Улучшить рейтинг за первые 3 месяца после запуска</p>
+</li>
+</ul>
+<p><strong>Итог: В течение первых 3 месяцев платформа должна добиться повышения среднего рейтинга сервиса до 4.5 из 5 в App Store и Google Play</strong></p>
+</li>
+<li>
+<p><strong>Снизить уровень конфликтов между владельцами и опекунами</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретные):</strong> Снизить количество конфликтов между владельцами и опекунами до уровня не более 3% от всех оказанных услуг</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Количество жалоб и споров в проценте от общего числа предоставленных услуг</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Введение системы четких условий передержки, предоставление шаблонов договоров и улучшение механизмов разрешения споров</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Снижение числа конфликтов повысит доверие к платформе, удержит существующих пользователей, привлечет новых. Повысит лояльность пользователей.</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная во времени):</strong> Достичь цели в течение 6 месяцев после внедрения фичи для разрешения споров</p>
+</li>
+</ul>
+<p><strong>Итог: В течение 6 месяцев после внедрения новых приемов разрешения споров платформа должна снизить уровень конфликтов между пользователями до 3% от общего числа оказанных услуг</strong></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-метрики-kpis"><strong>Ключевые метрики (KPIs)</strong><a href="#ключевые-метрики-kpis" class="hash-link" aria-label="Direct link to ключевые-метрики-kpis" title="Direct link to ключевые-метрики-kpis">​</a></h3>
+<ol>
+<li>
+<p><strong>Количество активных пользователей</strong> — метрика, которая отслеживает кол-во владельцев и опекунов, использующих систему</p>
+</li>
+<li>
+<p><strong>Количество завершенных сделок/услуг</strong> — метрика, которая показывает кол-во передержек, совершенных и завершенных через системе</p>
+</li>
+<li>
+<p><strong>Средняя стоимость предоставленной услуги</strong> — метрика, которая показывает среднюю стоимость сделки</p>
+</li>
+<li>
+<p><strong>Рейтинг и отзывы пользователей</strong> — метрика, которая отслеживает рейтинг и отзывы об опекунах, владельцах и их животных</p>
+</li>
+<li>
+<p><strong>Конверсия новых пользователей</strong> — метрика, измеряет процент новых пользователей, которые регистрируются и начинают использовать сервис</p>
+</li>
+<li>
+<p><strong>Процент конфликтов и споров</strong> — метрика, которая отслеживает процент бронирований, которые закончились конфликтом или спором между владельцем и опекуном</p>
+</li>
+<li>
+<p><strong>Рейтинг и отзывы о системе</strong> — метрика, которая отслеживает рейтинг и отзывы системе</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-описание-продукта"><strong>5. Описание продукта</strong><a href="#5-описание-продукта" class="hash-link" aria-label="Direct link to 5-описание-продукта" title="Direct link to 5-описание-продукта">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="общая-концепция"><strong>Общая концепция</strong><a href="#общая-концепция" class="hash-link" aria-label="Direct link to общая-концепция" title="Direct link to общая-концепция">​</a></h3>
+<p>Информационная система по передержке домашних животных, где владельцы могут быстро и безопасно находить проверенных опекунов для временной передержки своих питомцев. Основная ценность системы заключается в прозрачности условий, рейтинговой системе для владельцев и опекунов, а также в возможности отслеживать состояние питомца через отчеты (фото, видео и сообщения).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-функции"><strong>Ключевые функции:</strong><a href="#ключевые-функции" class="hash-link" aria-label="Direct link to ключевые-функции" title="Direct link to ключевые-функции">​</a></h3>
+<ol>
+<li>
+<p><strong>Поиск опекуна/животного по местоположению.</strong> Возможность найти ближайшего опекуна/животного для сокращения времени транспортировки</p>
+</li>
+<li>
+<p><strong>Система рейтингов и отзывов.</strong> Карточка с оценка как опекунов, так и владельцев с питомцами, чтобы повысить лояльность и надежность сервиса</p>
+</li>
+<li>
+<p><strong>Прозрачная система оплат.</strong> Безопасные платежи через платформу с гарантией возврата в случае конфликтов или проблем</p>
+</li>
+<li>
+<p><strong>Отчетность.</strong>  Регулярные отчеты (видео, фотоотчеты, а также сообщения) о состоянии питомца во время передержки</p>
+</li>
+<li>
+<p><strong>Фильтрация по типу животного и сроку передержки.</strong> Фильтрация для выбора опекунов, которые могут работать с определенным типом животных на нужное время (период передержки)</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-риски"><strong>6. Риски</strong><a href="#6-риски" class="hash-link" aria-label="Direct link to 6-риски" title="Direct link to 6-риски">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="риски-и-стратегии-управления-рисками"><strong>Риски и стратегии управления рисками:</strong><a href="#риски-и-стратегии-управления-рисками" class="hash-link" aria-label="Direct link to риски-и-стратегии-управления-рисками" title="Direct link to риски-и-стратегии-управления-рисками">​</a></h3>
+<ol>
+<li>
+<p><strong>Технические сбои в системе (неработоспособность приложения, потеря данных):</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Регулярное тестирование системы, внедрение резервного копирования данных и мониторинг сервиса</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Нарушение работы сервиса приводит к потере данных, снижению лояльностей пользователей + отток клиентов</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Недостаточное кол ичество пользователей на старте:</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Агрессивная маркетинговая кампания, стимулирование через скидки и акции для новых пользователей</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Недостаток пользователей приводит к задержкам в росте платформы (бизнес не получает денег) , снижению числа транзакций</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Конфликты между владельцами и опекунами:</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Введение четких условий сотрудничества, механизмов разрешения споров, а также система страхования для защиты обеих сторон</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Возникающие споры уменьшают уровень доверия к платформе, что приводит к негативным отзывам и снижению числа повторных заказов (платформа становится не востребованной)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Недовольство пользователей качеством услуг:</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Система рейтингов и отзывов, поддержка пользователей, регулярные проверки и модерация на платформе</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Плохое качество передержки приводит к негативным отзывам, снижению рейтинга и уменьшению количества новых пользователей</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Изменения на р ынке (появление конкурентов, изменения в законодательстве):</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Мониторинг конкурентов на рынке, гибкость и улучшение функциональности на основе отзывов и исследований конкурентов</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Появление конкурентов на рынке или изменения в законодательстве могут снизить долю рынка и повлиять на доходность, усложняя развитие и масштабирование системы (мало пользователей)</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-описание-проблемы-1"><strong>1. Описание проблемы</strong><a href="#1-описание-проблемы-1" class="hash-link" aria-label="Direct link to 1-описание-проблемы-1" title="Direct link to 1-описание-проблемы-1">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="проблема-1"><strong>Проблема</strong><a href="#проблема-1" class="hash-link" aria-label="Direct link to проблема-1" title="Direct link to проблема-1">​</a></h3>
+<p>Большинство владельцев домашних животных сталкиваются с трудностями, когда им нужно временно уехать из дома на некоторое время (Например, отпуск, командировка, переезд и т.д.), но они не могут взять своих питомцев с собой. Не у всех есть близкие люди или друзья, готовые присмотреть за животным в их отсутствие, а специализированные гостиницы для жив отных часто дорогие и могут вызывать стресс у питомцев из-за незнакомой обстановки. В то же время есть люди, которые готовы помочь и присматривать за питомцем.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="потребности-и-боли-целевой-аудитории-1"><strong>Потребности и боли целевой аудитории</strong><a href="#потребности-и-боли-целевой-аудитории-1" class="hash-link" aria-label="Direct link to потребности-и-боли-целевой-аудитории-1" title="Direct link to потребности-и-боли-целевой-аудитории-1">​</a></h3>
+<ol>
+<li>
+<p>Владельцы животных нуждаются в надежном и удобном способе найти временного &quot;опекуна&quot;, который сможет присмотреть за их питомцем в домашних условиях, минимизируя стресс для животного. Им важно, чтобы &quot;опекун&quot; был проверенным и имел высокий рейтинг и положительные отзывы. Система рейтинга будет работать не только для &quot;опекунов&quot;, но и для самих владельцев и их питомцев, чтобы каждый участник знал, с кем имеет дело. Это поможет &quot;опекунам&quot; лучше понять, какого питомца они берут, какие у него поведенческие особенности и насколько хозяин надежен в своих обязательствах.</p>
+</li>
+<li>
+<p>Люди, готовые взять животное на передержку, хотят иметь простую в использовании платформу для поиска запросов на передержку, с ясными условиями сотрудничества и прозрачной системой взаимоотношений с владельцами. Для них важна уверенность в том, что животное не принесет проблем, и что хозяин ответственно относится к своему питомцу и условиям передержки. Рейтинг владельцев и животных поможет &quot;опекунам&quot; выбирать подходящих клиентов.</p>
+</li>
+<li>
+<p>Безопасность, доверие и прозрачность — ключевые аспекты. Важно обеспечить честную и прозрачную оплату услуг, чтобы обе стороны могли быть уверены, что финансовые условия соблюдены. Также система должна предусматривать возможность постоянного контроля за состоянием питомца через регулярные фото и видеоотчеты от &quot;опекунов&quot;, что позволит владельцам чувствовать себя спокойно на протяжении всего времени передержки.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="текущие-альтернативы-1"><strong>Текущие альтернативы</strong><a href="#текущие-альтернативы-1" class="hash-link" aria-label="Direct link to текущие-альтернативы-1" title="Direct link to текущие-альтернативы-1">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="специализированные-гостиницы-для-животных-1"><strong>Специализированные гостиницы для животных</strong><a href="#специализированные-гостиницы-для-животных-1" class="hash-link" aria-label="Direct link to специализированные-гостиницы-для-животных-1" title="Direct link to специализированные-гостиницы-для-животных-1">​</a></h4>
+<p>В крупных городах России существуют гостиницы для животных, где владельцы могут оставить своих питомцев на время отъезда. В этих заведениях животные содержатся в клетках или вольерах, под наблюдением персонала. Примером таких гостиниц в Москве: ЗооНяня, Каникулы Бонифация.</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>
+<p>Постоянный профессиональный уход за животными</p>
+</li>
+<li>
+<p>Услуги доступны во многих крупных городах</p>
+</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Стресс у животных из-за нахождения в клетках и в незнакомой среде. + Отсутствие домашней обстановки, что может приводить к стрессу животное</p>
+</li>
+<li>
+<p>Высокая стоимость услуг, особенно при длительной передержке или специальном уходе</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="зооняни-и-частные-передержки-через-доски-объявлений-1"><strong>Зооняни и частные &quot;передержки&quot; через доски объявлений</strong><a href="#зооняни-и-частные-передержки-через-доски-объявлений-1" class="hash-link" aria-label="Direct link to зооняни-и-частные-передержки-через-доски-объявлений-1" title="Direct link to зооняни-и-частные-передержки-через-доски-объявлений-1">​</a></h4>
+<p>Владельцы питомцев пользуются услугами зоонянь, найденных через сайты объявлений (например, Avito). Это индивидуальные люди, которые готовы взять животных на передержку</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>
+<p>Услуги частных зоонянь обычно дешевле гостиниц для животных</p>
+</li>
+<li>
+<p>Возможность найти опекуна поблизости</p>
+</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Нет четкой системы проверки зоонянь и гарантий качества ухода</p>
+</li>
+<li>
+<p>Отсутствие прозрачности в оплате и условиях передержки, что может вызвать недоразумения</p>
+</li>
+<li>
+<p>Сложности с отзывами и рейтингами, что делает выбор &quot;опекуна&quot; ненадежным</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="друзья-и-знакомые-1"><strong>Друзья и знакомые</strong><a href="#друзья-и-знакомые-1" class="hash-link" aria-label="Direct link to друзья-и-знакомые-1" title="Direct link to друзья-и-знакомые-1">​</a></h4>
+<p>Владельцы могут обращаться за помощью к друзьям или родственникам, чтобы те присмотрели за их питомцем на время отъезда</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>
+<p>Обычно бесплатн ый уход или на доверительной основе</p>
+</li>
+<li>
+<p>Животное находится в знакомой или домашней обстановке</p>
+</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Друзья или родственники могут не иметь должного опыта или желания заниматься животным</p>
+</li>
+<li>
+<p>Сложности с регулярным использованием такого способа, неудобство от просьбы о помощи</p>
+</li>
+<li>
+<p>Возможны конфликты, если уход за животным окажется не на должном уровне</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="социальные-сети-и-сообщества-1"><strong>Социальные сети и сообщества</strong><a href="#социальные-сети-и-сообщества-1" class="hash-link" aria-label="Direct link to социальные-сети-и-сообщества-1" title="Direct link to социальные-сети-и-сообщества-1">​</a></h4>
+<p>Владельцы могут искать опекунов через тематические группы в соцсетях, посвященные передержке животных</p>
+<p><strong>Преимущества</strong></p>
+<ul>
+<li>Быстрый и дешевый способ найти &quot;опекуна&quot;</li>
+</ul>
+<p><strong>Недостатки</strong></p>
+<ul>
+<li>
+<p>Отсутствие проверки и надежных механизмов подтверждения качества услуг</p>
+</li>
+<li>
+<p>Нет системы рейтингов, отзывов или контроля условий передержки</p>
+</li>
+<li>
+<p>Неформальные договоренности, что может вызвать риски для безопасности питомца и ф инансовых обязательств</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="почему-эти-решения-недостаточны-1"><strong>Почему эти решения недостаточны</strong><a href="#почему-эти-решения-недостаточны-1" class="hash-link" aria-label="Direct link to почему-эти-решения-недостаточны-1" title="Direct link to почему-эти-решения-недостаточны-1">​</a></h2>
+<ul>
+<li>
+<p><strong>Недостаток прозрачности и доверия:</strong> Представленные варианты не предоставляют проверенных данных о людях, предлагающих передержку. Это вызывает риск как для владельцев питомцев (неизвестно, в каких условиях будет находиться их питомец), так и для опекунов (могут столкнуться с проблемным животным или неплатежеспособным владельцем)</p>
+</li>
+<li>
+<p><strong>Отсутствие единой платформы:</strong> Решения раздроблены между разными сервисами — от частных объявлений до соцсетей, что затрудняет поиск и выбор подходящего опекуна или питомца. Нет удобного инструмента, где можно сразу сравнить предложения, получить отзывы, забронировать услугу и оплатить ее</p>
+</li>
+<li>
+<p><strong>Отсутствие контроля и отчетности:</strong> В текущих альтернативах владельцы редко могут быть уверены в том, как их питомец чувствует себя на передержке, нет м еханизмов для регулярной отчетности (фото, видео, сообщения), что создает дополнительные беспокойства</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-целевая-аудитория-1"><strong>2. Целевая аудитория</strong><a href="#2-целевая-аудитория-1" class="hash-link" aria-label="Direct link to 2-целевая-аудитория-1" title="Direct link to 2-целевая-аудитория-1">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="сегменты-аудитории-1"><strong>Сегменты аудитории</strong><a href="#сегменты-аудитории-1" class="hash-link" aria-label="Direct link to сегменты-аудитории-1" title="Direct link to сегменты-аудитории-1">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы-1"><strong>Владельцы домашних животных (кошки, собаки и грызуны (хомяки, морские свинки, крысы))</strong><a href="#владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы-1" class="hash-link" aria-label="Direct link to владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы-1" title="Direct link to владельцы-домашних-животных-кошки-собаки-и-грызуны-хомяки-морские-свинки-крысы-1">​</a></h4>
+<ul>
+<li>Это работающие люди, студенты или семьи, которым не с кем оставить питомца, пока они находятся в отъезде</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="опекуны-зооняни-3"><strong>Опекуны (зооняни)</strong><a href="#опекуны-зооняни-3" class="hash-link" aria-label="Direct link to опекуны-зооняни-3" title="Direct link to опекуны-зооняни-3">​</a></h4>
+<ul>
+<li>Студенты, пенсионеры и любители животных, которые готовы заботится о питомцах (во время отсутствия хозяев)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="потребности-и-ожидания-1"><strong>Потребности и ожидания</strong><a href="#потребности-и-ожидания-1" class="hash-link" aria-label="Direct link to потребности-и-ожидания-1" title="Direct link to потребности-и-ожидания-1">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="владельцы-животных-1"><strong>Владельцы животных</strong><a href="#владельцы-животных-1" class="hash-link" aria-label="Direct link to владельцы-животных-1" title="Direct link to владельцы-животных-1">​</a></h4>
+<ul>
+<li>
+<p>Возможность найти опекуна рядом с домом (для минимизации стресса питомца)</p>
+</li>
+<li>
+<p>Возможность найти проверенного опекуна для передержки (рейтинг и отзывы опекуна)</p>
+</li>
+<li>
+<p>Ищут прозрачную систему оплаты, контроль за состоянием животного через регулярные фото и видеоотчеты</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="опекуны-зооняни-4"><strong>Опекуны (зооняни)</strong><a href="#опекуны-зооняни-4" class="hash-link" aria-label="Direct link to опекуны-зооняни-4" title="Direct link to опекуны-зооняни-4">​</a></h4>
+<ul>
+<li>
+<p>Ожидают прозрачные и безопасные условия работы, возможность выбора удобного времени для передержки и прозрачную систему оплаты</p>
+</li>
+<li>
+<p>Возможность работать только с проверенными владельцами и питомцами через систему рейтингов и отзывов</p>
+</li>
+<li>
+<p>Хотят находит запросы на передержку недалеко от дома</p>
+</li>
+<li>
+<p>Возможность выбирать тип животного и срок передержки</p>
+</li>
+<li>
+<p>Возможность найти проверенного владельца и животного (рейтинг и отзывы)</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-стейкхолдеры-1"><strong>3. Стейкхолдеры</strong><a href="#3-стейкхолдеры-1" class="hash-link" aria-label="Direct link to 3-стейкхолдеры-1" title="Direct link to 3-стейкхолдеры-1">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="стейкхолдеры-продукта-1"><strong>Стейкхолдеры продукта</strong><a href="#стейкхолдеры-продукта-1" class="hash-link" aria-label="Direct link to стейкхолдеры-продукта-1" title="Direct link to стейкхолдеры-продукта-1">​</a></h3>
+<ol>
+<li>
+<p>Владельцы домашних животных (кошки, собаки и грызуны)</p>
+</li>
+<li>
+<p>Опекуны (зооняни)</p>
+</li>
+<li>
+<p>Разработчики информационной системы</p>
+</li>
+<li>
+<p>Инвесторы (заказчики)</p>
+</li>
+<li>
+<p>Техподдержка</p>
+</li>
+<li>
+<p>Маркетологи</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="роли-стейкхолдеров-1"><strong>Роли стейкхолдеров</strong><a href="#роли-стейкхолдеров-1" class="hash-link" aria-label="Direct link to роли-стейкхолдеров-1" title="Direct link to роли-стейкхолдеров-1">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="владельцы-домашних-животных-1"><strong>Владельцы домашних животных</strong><a href="#владельцы-домашних-животных-1" class="hash-link" aria-label="Direct link to владельцы-домашних-животных-1" title="Direct link to владельцы-домашних-животных-1">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Основные пользователи платформы, которые ищут опекунов для временной передержки питомцев</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Их отзывы, рейтинг опекунов и использование платформы определяют качество и успешность сервиса (отзывы и рейтинг в AppStore и Google Play). Их потребности напрямую влияют на развитие функциональности платформы (удобство бронирования времени и даты, прозрачная система оплаты и контроль за питомцем, месторасположение и рейтинг &quot;опекунов&quot; )</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="опекуны-зооняни-5"><strong>Опекуны (зооняни)</strong><a href="#опекуны-зооняни-5" class="hash-link" aria-label="Direct link to опекуны-зооняни-5" title="Direct link to опекуны-зооняни-5">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Исполнители услуг по передержке. Они предоставляют свои услуги на платформе, заботясь о питомцах</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Их опыт работы в системе: удобство взаимодействия с владельцами и прозрачность условий передержки, честная и прозрачная оплата, рейтинг владельцев и их питомцев. Данные факторы определяют уровень их лояльности к системе. Они также помогают улучшать систему рейтингов и отзывов</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="разработчики-информационной-системы-1"><strong>Разработчики информационной системы</strong><a href="#разработчики-информационной-системы-1" class="hash-link" aria-label="Direct link to разработчики-информационной-системы-1" title="Direct link to разработчики-информационной-системы-1">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Команда, отвечающая за создание, тестирование и появлений обновлений системы</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Отвечают за техническую реализацию требований стейкхолдеров, обеспечивая стабильную работу платформы и внедрение новых функций для удобства владельцев и опекунов</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="инвесторы-заказчики-1"><strong>Инвесторы (заказчики)</strong><a href="#инвесторы-заказчики-1" class="hash-link" aria-label="Direct link to инвесторы-заказчики-1" title="Direct link to инвесторы-заказчики-1">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Финансовые участники проекта, заинтересованные в успехе и прибыльности системы</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Инвесторы принимают участие в стратегических решениях, касающихся расширения системы, монетизации услуг и долгосрочного роста бизнеса</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="техподдержка-1"><strong>Техподдержка</strong><a href="#техподдержка-1" class="hash-link" aria-label="Direct link to техподдержка-1" title="Direct link to техподдержка-1">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Осуществляют помощь пользователям платформы, решают возникающие проблемы и обеспечивают высокое качество сервиса (в эксптренные моменты)</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Влияние на корректировку функций платформы на основе обращений пользователей, улучшая их взаимодейстивие с системой</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="маркетологи-1">Маркетологи<a href="#маркетологи-1" class="hash-link" aria-label="Direct link to Маркетологи" title="Direct link to Маркетологи">​</a></h4>
+<ul>
+<li>
+<p><strong>Роль:</strong> Отвечают за продвижение платформы на рынке, привлечение новых пользователей (как владельцев животных, так и опекунов) и повышение узнаваемости бренда</p>
+</li>
+<li>
+<p><strong>Влияние на проект:</strong> Маркетологи разрабатывают стратегии по привлечению целевой аудитории, создают рекламные кампании, анализируют поведение пользователей и корректируют маркетинговые активности для повышения конверсии</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-бизнес-цели-и-ключевые-метрики-1"><strong>4. Бизнес-цели и ключевые метрики</strong><a href="#4-бизнес-цели-и-ключевые-метрики-1" class="hash-link" aria-label="Direct link to 4-бизнес-цели-и-ключевые-метрики-1" title="Direct link to 4-бизнес-цели-и-ключевые-метрики-1">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="основные-бизнес-цели-1"><strong>Основные бизнес-цели</strong><a href="#основные-бизнес-цели-1" class="hash-link" aria-label="Direct link to основные-бизнес-цели-1" title="Direct link to основные-бизнес-цели-1">​</a></h3>
+<ol>
+<li>
+<p><strong>Увеличение числа пользователей</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретная):</strong> Привлечь 5000 активных пользователей (владельцев животных и опекунов) на платформу в течение первого года</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Количество зарегистрированных пользователей и количество активных бронирований в месяц</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Запуск целевых маркетинговых кампаний, продвижение в социальных сетях и через партнёрства с блогерами/инфлюенсирами</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Больше пользователей — больше транзакций, что ведет к росту доходов</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная по времени):</strong> Достичь цели к концу первого года работы</p>
+</li>
+</ul>
+<p><strong>Итог: За первый год после запуска платформа должна привлечь 5000 активных пользователей (владельцев и опекунов) благодаря маркетинговому отделу</strong></p>
+</li>
+<li>
+<p><strong>Увеличение дохода через комиссии за услуги в системе</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретная):</strong> Добиться 100 000 рублей ежемесячного дохода через комиссию за услуги передержки</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Средний доход на пользователя и общий доход в месяц</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Оптимизация структуры комиссии, повышение лояльности пользователей через улучшение сервиса</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Рост дохода через комиссионные транзакции поддерживает долгосрочную стабильность платформы</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная по времени):</strong> Достичь целевого дохода в течение первого полугода после  выпуска продукта на рынок</p>
+</li>
+</ul>
+<p><strong>Итог: За первые полгода работы система должна достичь ежемесячного дохода в 100 000 рублей через систему комиссий за предоставленные услуги (опека над животными)</strong></p>
+</li>
+<li>
+<p><strong>Улучшение вовлеченности пользователей</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретная):</strong> Установить среднюю оценку сервиса до 4.5 из 5 в App Store и Google Play</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Средний рейтинг пользователей, количество положительных отзывов</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Улучшение системы поддержки, добавление функции отчетности по питомцам (фото и видео съемка)</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Положительные отзывы и высокий рейтинг привлекают новых пользователей и удерживают существующих. Повышают лояльность пользователей</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная по времени):</strong> Улучшить рейтинг за первые 3 месяца после запуска</p>
+</li>
+</ul>
+<p><strong>Итог: В течение первых 3 месяцев платформа должна добиться повышения среднего рейтинга сервиса до 4.5 из 5 в App Store и Google Play</strong></p>
+</li>
+<li>
+<p><strong>Снизить уровень конфликтов между владельцами и опекунами</strong></p>
+<ul>
+<li>
+<p><strong>Specific (конкретные):</strong> Снизить количество конфликтов между владельцами и опекунами до уровня не более 3% от всех оказанных услуг</p>
+</li>
+<li>
+<p><strong>Measurable (измеримая):</strong> Количество жалоб и споров в проценте от общего числа предоставленных услуг</p>
+</li>
+<li>
+<p><strong>Achievable (достижимая):</strong> Введение системы четких условий передержки, предоставление шаблонов договоров и улучшение механизмов разрешения споров</p>
+</li>
+<li>
+<p><strong>Relevant (релевантная):</strong> Снижение числа конфликтов повысит доверие к платформе, удержит существующих пользователей, привлечет новых. Повысит лояльность пользователей.</p>
+</li>
+<li>
+<p><strong>Time-bound (ограниченная во времени):</strong> Достичь цели в течение 6 месяцев после внедрения фичи для разрешения споров</p>
+</li>
+</ul>
+<p><strong>Итог: В течение 6 месяцев после внедрения новых приемов разрешения споров платформа должна снизить уровень конфликтов между пользователями до 3% от общего числа оказанных услуг</strong></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-метрики-kpis-1"><strong>Ключевые метрики (KPIs)</strong><a href="#ключевые-метрики-kpis-1" class="hash-link" aria-label="Direct link to ключевые-метрики-kpis-1" title="Direct link to ключевые-метрики-kpis-1">​</a></h3>
+<ol>
+<li>
+<p><strong>Количество а ктивных пользователей</strong> — метрика, которая отслеживает кол-во владельцев и опекунов, использующих систему</p>
+</li>
+<li>
+<p><strong>Количество завершенных сделок/услуг</strong> — метрика, которая показывает кол-во передержек, совершенных и завершенных через системе</p>
+</li>
+<li>
+<p><strong>Средняя стоимость предоставленной услуги</strong> — метрика, которая показывает среднюю стоимость сделки</p>
+</li>
+<li>
+<p><strong>Рейтинг и отзывы пользователей</strong> — метрика, которая отслеживает рейтинг и отзывы об опекунах, владельцах и их животных</p>
+</li>
+<li>
+<p><strong>Конверсия новых пользователей</strong> — метрика, измеряет процент новых пользователей, которые регистрируются и начинают использовать сервис</p>
+</li>
+<li>
+<p><strong>Процент конфликтов и споров</strong> — метрика, которая отслеживает процент бронирований, которые закончились конфликтом или спором между владельцем и опекуном</p>
+</li>
+<li>
+<p><strong>Рейтинг и отзывы о системе</strong> — метрика, которая отслеживает рейтинг и отзывы системе</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-описание-продукта-1"><strong>5. Описание продукта</strong><a href="#5-описание-продукта-1" class="hash-link" aria-label="Direct link to 5-описание-продукта-1" title="Direct link to 5-описание-продукта-1">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="общая-концепция-1"><strong>Общая концепция</strong><a href="#общая-концепция-1" class="hash-link" aria-label="Direct link to общая-концепция-1" title="Direct link to общая-концепция-1">​</a></h3>
+<p>Информационная система по передержке домашних животных, где владельцы могут быстро и безопасно находить проверенных опекунов для временной передержки своих питомцев. Основная ценность системы заключается в прозрачности условий, рейтинговой системе для владельцев и опекунов, а также в возможности отслеживать состояние питомца через отчеты (фото, видео и сообщения).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-функции-1"><strong>Ключевые функции:</strong><a href="#ключевые-функции-1" class="hash-link" aria-label="Direct link to ключевые-функции-1" title="Direct link to ключевые-функции-1">​</a></h3>
+<ol>
+<li>
+<p><strong>Поиск опекуна/животного по местоположению.</strong> Возможность найти ближайшего опекуна/животного для сокращения времени транспортировки</p>
+</li>
+<li>
+<p><strong>Система рейтингов и отзывов.</strong> Карточка с оценка как опекунов, так и владельцев с питомцами, чтобы повысить лояльность и надежность сервиса</p>
+</li>
+<li>
+<p><strong>Прозрачная система оплат.</strong> Безопасные  платежи через платформу с гарантией возврата в случае конфликтов или проблем</p>
+</li>
+<li>
+<p><strong>Отчетность.</strong>  Регулярные отчеты (видео, фотоотчеты, а также сообщения) о состоянии питомца во время передержки</p>
+</li>
+<li>
+<p><strong>Фильтрация по типу животного и сроку передержки.</strong> Фильтрация для выбора опекунов, которые могут работать с определенным типом животных на нужное время (период передержки)</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-риски-1"><strong>6. Риски</strong><a href="#6-риски-1" class="hash-link" aria-label="Direct link to 6-риски-1" title="Direct link to 6-риски-1">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="риски-и-стратегии-управления-рисками-1"><strong>Риски и стратегии управления рисками:</strong><a href="#риски-и-стратегии-управления-рисками-1" class="hash-link" aria-label="Direct link to риски-и-стратегии-управления-рисками-1" title="Direct link to риски-и-стратегии-управления-рисками-1">​</a></h3>
+<ol>
+<li>
+<p><strong>Технические сбои в системе (неработоспособность приложения, потеря данных):</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Регулярное тестирование системы, внедрение резервного копирования данных и мониторинг сервиса</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Нарушение работы сервиса приводит к потере данных, снижению лояльностей пользователей + отток клиентов</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Недостаточное количество пользователей на старте:</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Агрессивная маркетинговая кампания, стимулирование через скидки и акции для новых пользователей</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Недостаток пользователей приводит к задержкам в росте платформы (бизнес не получает денег) , снижению числа транзакций</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Конфликты между владельцами и опекунами:</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Введение четких условий сотрудничества, механизмов разрешения споров, а также система страхования для защиты обеих сторон</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Возникающие споры уменьшают уровень доверия к платформе, что приводит к негативным отзывам и снижению числа повторных заказов (платформа становится не востребованной)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Недовольство пользователей качеством услуг:</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Система рейтингов и отзывов, поддержка пользователей, регулярные проверки и модерация на платформе</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Плохое качество передержки приводит к негативным отзывам, снижению рей тинга и уменьшению количества новых пользователей</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Изменения на рынке (появление конкурентов, изменения в законодательстве):</strong></p>
+<ul>
+<li>
+<p><strong>Стратегия:</strong> Мониторинг конкурентов на рынке, гибкость и улучшение функциональности на основе отзывов и исследований конкурентов</p>
+</li>
+<li>
+<p><strong>Влияние</strong>: Появление конкурентов на рынке или изменения в законодательстве могут снизить долю рынка и повлиять на доходность, усложняя развитие и масштабирование системы (мало пользователей)</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="7-основные-функции-продукта"><strong>7. Основные функции продукта:</strong><a href="#7-основные-функции-продукта" class="hash-link" aria-label="Direct link to 7-основные-функции-продукта" title="Direct link to 7-основные-функции-продукта">​</a></h3>
+<ol>
+<li>
+<p><strong>Поиск по местоположению</strong> — владельцы смогут находить опекунов, которые живут недалеко от них, чтобы минимизировать время и стресс для питомца при транспортировке. Опекуны могут искать животных, нуждающихся в передержке, по своему району</p>
+</li>
+<li>
+<p><strong>Карточки с животными и опекунами</strong> — после регистрации пользователи выбирают свой город и район. Владельцы видят карточки опекунов с рейтингом, отзывами, их опытом работы и стоимостью услуг. Опекуны видят карточки с животными, включая фото питомца, описание поведения, возраст, требования к уходу, срок и цену передержки</p>
+</li>
+<li>
+<p><strong>Система рейтингов и отзывов</strong> — владельцы и опекуны могут оставлять отзывы, что повышает прозрачность и доверие на платформе (отзывы можно оставлять о владельцах, питомцах и опекунах)</p>
+</li>
+<li>
+<p><strong>Прозрачная система оплаты</strong> — все транзакции проходят через платформу с безопасным резервированием средств до завершения услуги (оплата проходит после того, как обе стороны удовлетварены результатом сделки)</p>
+</li>
+<li>
+<p><strong>Отчетность. Фото и видеоотчеты о питомце</strong> — опекуны предоставляют регулярные обновления о состоянии питомца через фото и видеоотчености + регулярно отвечают на сообщения</p>
+</li>
+<li>
+<p><strong>Фильтрация по типу животного и сроку передержки</strong> — владельцы и опекуны имеют возможность настраивать фильтрацию по типу животного, а также по продолжительности передержки пользователи</p>
+</li>
+<li>
+<p><strong>Уведомления и напоминания</strong> — пользователи (как опекуны, так и владельцы) получают уведомления о бронированиях, оплате и отчетах</p>
+</li>
+<li>
+<p><strong>Чат между владельцем и опекуном</strong> — для общения и уточнения деталей передержки с сохранением переписки внутри платформы для во избежания мошенничества</p>
+</li>
+<li>
+<p><strong>Единый аккаунт</strong> — пользователи могут быть одновременно владельцами и опекунами, что позволяет гибкость в использовании системы. При входе пользователи могут выбрать, в какой роли они хотят действовать: как владелец или как опекун. Это гарантирует персонализированный интерфейс в зависимости от выбранной роли, что упрощает работу с платформой</p>
+</li>
+<li>
+<p><strong>Лента</strong> —</p>
+<ul>
+<li>
+<p>Опекуны видят карточки животных, нуждающихся в передержке, с подробной информацией о поведении, требованиях к уходу и сроках передержки</p>
+</li>
+<li>
+<p>Владельцы видят карточки опекунов с рейтингами, отзывами и условиями передержки, что помогает быстро найти подходящего опекуна</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Выбор роли</strong> — если пользователь указал, что готов быть и владельцем, и опекуном, система при входе будет запрашивать, под какой ролью он хочет работать в данный момент. Если же указана только одна роль, выбор автоматически пропускается, чтобы не перегружать интерфейс и повысить удобство использования</p>
+</li>
+<li>
+<p><strong>Бронирование</strong> — возможность бронировать опекуна/животного для передержки через платформу</p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-версии-продукта-и-план-развития"><strong>8. Версии продукта и план развития:</strong><a href="#8-версии-продукта-и-план-развития" class="hash-link" aria-label="Direct link to 8-версии-продукта-и-план-развития" title="Direct link to 8-версии-продукта-и-план-развития">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="версия-10-must-have"><strong>Версия 1.0 (must have):</strong><a href="#версия-10-must-have" class="hash-link" aria-label="Direct link to версия-10-must-have" title="Direct link to версия-10-must-have">​</a></h4>
+<ul>
+<li>
+<p><strong>Основные функции:</strong> карточки с животными и опекунами, поиск по местоположению, система рейтингов, бронирование,  отчетность, регистрация, лента новостей, выбор роли</p>
+</li>
+<li>
+<p><strong>Фокус:</strong> обеспечить базовую функциональность для поиска и бронирования опекунов, создание MVP с основными функциями</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="версия-11-should-have--через-3-месяца"><strong>Версия 1.1 (should have / через 3 месяца):</strong><a href="#версия-11-should-have--через-3-месяца" class="hash-link" aria-label="Direct link to версия-11-should-have--через-3-месяца" title="Direct link to версия-11-should-have--через-3-месяца">​</a></h4>
+<ul>
+<li>
+<p><strong>Функции:</strong> уведомления и напоминания о бронированиях, оплатах и отчетах, фильтрация по типу животного, система оплаты</p>
+</li>
+<li>
+<p><strong>Фокус:</strong> улучшение удобства для пользователей и добавление более качественного общения между владельцем и опекуном</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="версия-12-через-6-месяцев"><strong>Версия 1.2 (через 6 месяцев):</strong><a href="#версия-12-через-6-месяцев" class="hash-link" aria-label="Direct link to версия-12-через-6-месяцев" title="Direct link to версия-12-через-6-месяцев">​</a></h4>
+<ul>
+<li>
+<p><strong>Функции:</strong> программы лояльности для опекунов и владельцев, персонализированные предложения для повторных пользователей</p>
+</li>
+<li>
+<p><strong>Фокус:</strong> повышение уровня удержания пользователей и создание программы лояльности для увеличения повторных бронирований</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="версия-20-через-12-месяцев"><strong>Версия 2.0 (через 12 месяцев):</strong><a href="#версия-20-через-12-месяцев" class="hash-link" aria-label="Direct link to версия-20-через-12-месяцев" title="Direct link to версия-20-через-12-месяцев">​</a></h4>
+<ul>
+<li>
+<p><strong> Функции:</strong> расширенная аналитика для владельцев (например, статистика по питомцам, история передержек), интеграция со сторонними сервисами (страхование, ветеринарные услуги)</p>
+</li>
+<li>
+<p><strong>Фокус:</strong> создание экосистемы услуг для владельцев питомцев и развитие дополнительных возможностей для пользователей</p>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9-ограничения-и-исключения"><strong>9. Ограничения и исключения:</strong><a href="#9-ограничения-и-исключения" class="hash-link" aria-label="Direct link to 9-ограничения-и-исключения" title="Direct link to 9-ограничения-и-исключения">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ограничения"><strong>Ограничения:</strong><a href="#ограничения" class="hash-link" aria-label="Direct link to ограничения" title="Direct link to ограничения">​</a></h4>
+<ol>
+<li>
+<p><strong>Технические ограничения:</strong></p>
+<ul>
+<li>
+<p>Зависимость от стабильного интернет-соединения для обмена фото/видеоотчетами и работы с геолокацией</p>
+</li>
+<li>
+<p>Время отклика системы может зависеть от количества пользователей и сложности запросов</p>
+</li>
+<li>
+<p>Ограничение на обработку больших объемов данных для профилей, которые включают фото и видео</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Бизнес-ограничения:</strong></p>
+<ul>
+<li>
+<p>Ограниче нный бюджет на маркетинг в первые 6 месяцев, что может замедлить рост пользовательской базы</p>
+</li>
+<li>
+<p>Комиссия платформы может быть ограничена определенным процентом, чтобы конкурировать с существующими сервисами</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="исключения"><strong>Исключения:</strong><a href="#исключения" class="hash-link" aria-label="Direct link to исключения" title="Direct link to исключения">​</a></h4>
+<ol>
+<li>
+<p><strong>Функции, не включенные в продукт на текущем этапе:</strong></p>
+<ul>
+<li>
+<p><strong>Услуги по ветеринарной помощи.</strong> Функция будет разработана позже + в MVP продукта заложен именно смысл передержки, а не лечения животного</p>
+</li>
+<li>
+<p><strong>Видеонаблюдение в реальном времени.</strong> Включение функции видеонаблюдения за питомцем не планируется из-за технических сложностей и высокой стоимости реализации</p>
+</li>
+<li>
+<p><strong>Глобальные сервисы.</strong> Платформа фокусируется на национальном рынке и не будет поддерживать международные транзакции или бронирования в первых версиях продукта</p>
+</li>
+</ul>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/chernoova/Purr-Stay/docs/Concept/model.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Purr-Stay/docs/category/концепция-проекта"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Концепция проекта</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Purr-Stay/docs/intro"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Tutorial Intro</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-описание-проблемы" class="table-of-contents__link toc-highlight"><strong>1. Описание проблемы</strong></a><ul><li><a href="#проблема" class="table-of-contents__link toc-highlight"><strong>Проблема</strong></a></li><li><a href="#потребности-и-боли-целевой-аудитории" class="table-of-contents__link toc-highlight"><strong>Потребности и боли целевой аудитории</strong></a></li><li><a href="#текущие-альтернативы" class="table-of-contents__link toc-highlight"><strong>Текущие альтернативы</strong></a></li></ul></li><li><a href="#почему-эти-решения-недостаточны" class="table-of-contents__link toc-highlight"><strong>Почему эти решения недостаточны</strong></a></li><li><a href="#2-целевая-аудитория" class="table-of-contents__link toc-highlight"><strong>2. Целевая аудитория</strong></a><ul><li><a href="#сегменты-аудитории" class="table-of-contents__link toc-highlight"><strong>Сегменты аудитории</strong></a></li><li><a href="#потребности-и-ожидания" class="table-of-contents__link toc-highlight"><strong>Потребности и ожидания</strong></a></li></ul></li><li><a href="#3-стейкхолдеры" class="table-of-contents__link toc-highlight"><strong>3. Стейкхолдеры</strong></a><ul><li><a href="#стейкхолдеры-продукта" class="table-of-contents__link toc-highlight"><strong>Стейкхолдеры продукта</strong></a></li><li><a href="#роли-стейкхолдеров" class="table-of-contents__link toc-highlight"><strong>Роли стейкхолдеров</strong></a></li></ul></li><li><a href="#4-бизнес-цели-и-ключевые-метрики" class="table-of-contents__link toc-highlight"><strong>4. Бизнес-цели и ключевые метрики</strong></a><ul><li><a href="#основные-бизнес-цели" class="table-of-contents__link toc-highlight"><strong>Основные бизнес-цели</strong></a></li><li><a href="#ключевые-метрики-kpis" class="table-of-contents__link toc-highlight"><strong>Ключевые метрики (KPIs)</strong></a></li></ul></li><li><a href="#5-описание-продукта" class="table-of-contents__link toc-highlight"><strong>5. Описание продукта</strong></a><ul><li><a href="#общая-концепция" class="table-of-contents__link toc-highlight"><strong>Общая концепция</strong></a></li><li><a href="#ключевые-функции" class="table-of-contents__link toc-highlight"><strong>Ключевые функции:</strong></a></li></ul></li><li><a href="#6-риски" class="table-of-contents__link toc-highlight"><strong>6. Риски</strong></a><ul><li><a href="#риски-и-стратегии-у правления-рисками" class="table-of-contents__link toc-highlight"><strong>Риски и стратегии управления рисками:</strong></a></li></ul></li><li><a href="#1-описание-проблемы-1" class="table-of-contents__link toc-highlight"><strong>1. Описание проблемы</strong></a><ul><li><a href="#проблема-1" class="table-of-contents__link toc-highlight"><strong>Проблема</strong></a></li><li><a href="#потребности-и-боли-целевой-аудитории-1" class="table-of-contents__link toc-highlight"><strong>Потребности и боли целевой аудитории</strong></a></li><li><a href="#текущие-альтернативы-1" class="table-of-contents__link toc-highlight"><strong>Текущие альтернативы</strong></a></li></ul></li><li><a href="#почему-эти-решения-недостаточны-1" class="table-of-contents__link toc-highlight"><strong>Почему эти решения недостаточны</strong></a></li><li><a href="#2-целевая-аудитория-1" class="table-of-contents__link toc-highlight"><strong>2. Целевая аудитория</strong></a><ul><li><a href="#сегменты-аудитории-1" class="table-of-contents__link toc-highlight"><strong>Сегменты аудитории</strong></a></li><li><a href="#потребности-и-ожидания-1" class="table-of-contents__link toc-highlight"><strong>Потребности и ожидания</strong></a></li></ul></li><li><a href="#3-стейкхолдеры-1" class="table-of-contents__link toc-highlight"><strong>3. Стейкхолдеры</strong></a><ul><li><a href="#стейкхолдеры-продукта-1" class="table-of-contents__link toc-highlight"><strong>Стейкхолдеры продукта</strong></a></li><li><a href="#роли-стейкхолдеров-1" class="table-of-contents__link toc-highlight"><strong>Роли стейкхолдеров</strong></a></li></ul></li><li><a href="#4-бизнес-цели-и-ключевые-метрики-1" class="table-of-contents__link toc-highlight"><strong>4. Бизнес-цели и ключевые метрики</strong></a><ul><li><a href="#основные-бизнес-цели-1" class="table-of-contents__link toc-highlight"><strong>Основные бизнес-цели</strong></a></li><li><a href="#ключевые-метрики-kpis-1" class="table-of-contents__link toc-highlight"><strong>Ключевые метрики (KPIs)</strong></a></li></ul></li><li><a href="#5-описание-продукта-1" class="table-of-contents__link toc-highlight"><strong>5. Описание продукта</strong></a><ul><li><a href="#общая-концепция-1" class="table-of-contents__link toc-highlight"><strong>Общая концепция</strong></a></li><li><a href="#ключевые-функции-1" class="table-of-contents__link toc-highlight"><strong>Ключевые функции:</strong></a></li></ul></li><li><a href="#6-риски-1" class="table-of-contents__link toc-highlight"><strong>6. Риски</strong></a><ul><li><a href="#риски-и-стратегии-управления-рисками-1" class="table-of-contents__link toc-highlight"><strong>Риски и стратегии управления рисками:</strong></a></li><li><a href="#7-основные-функции-продукта" class="table-of-contents__link toc-highlight"><strong>7. Основные функции продукта:</strong></a></li><li><a href="#8-версии-продукта-и-план-развития" class="table-of-contents__link toc-highlight"><strong>8. Версии продукта и план развития:</strong></a></li><li><a href="#9-ограничения-и-исключения" class="table-of-contents__link toc-highlight"><strong>9. Ограничения и исключения:</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Purr-Stay/docs">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Purr-Stay/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
