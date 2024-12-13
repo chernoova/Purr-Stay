@@ -1,10 +1,16 @@
+---
+title: UML диаграммы
+sidebar_position: 1
+---
+
 для выполнения задания необходимо создать диаграмму прецедентов (use case) и  диаграмму последовательностей (sequence) 
 
 ## Use case diagram (Диаграмма прецедентов)
 
 - диаграмма, которая показывает, как пользователи (акторы) взаимодействуют с системой.
 
-```Plain Text
+```plantuml
+
 @startuml
 left to right direction
 actor "Техподдержка" 
@@ -49,15 +55,17 @@ rectangle "Модерация отзывов" {
 @enduml
 ```
 
-![image_1.png](image_1.png)
+import Drawio from '@theme/Drawio'
+import diagram from '!!raw-loader!./model.drawio';
 
-
+<Drawio content={diagram} editable={false} />
 
 ## Sequence diagram (Диаграмма последовательности)
 
 - диаграмма, которая показывает порядок взаимодействия между объектами или актерами в системе во времени
 
-```Plain Text
+```plantuml
+
 @startuml
 actor Пользователь
 actor Техподдержка
@@ -94,6 +102,3 @@ end
 ```
 
 ![image.png](image.png)
-
-
-

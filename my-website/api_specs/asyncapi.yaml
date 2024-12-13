@@ -1,0 +1,77 @@
+asyncapi: '2.6.0'
+info:
+  title: API Личного Чата
+  version: '1.0.0'
+  description: |
+    Это API предоставляет возможность отправки сообщений и медиафайлов между двумя пользователями в режиме реального времени через WebSocket.
+    Каждый чат идентифицируется уникальным `chatId`. Пользователь аутентифицируется через `sessionId`
+
+servers:
+  chatServer:
+    url: wss://chat.purrandstay.com
+    protocol: wss
+    description: Сервер WebSocket для работы с личным чатом
+
+defaultContentType: application/json
+
+channels:
+  /chat/{chatId}:
+    parameters:
+      chatId:
+        description: Уникальный идентификатор чата между двумя пользователями
+        schema:
+          type: string
+          example: "abc123"
+    description: Канал WebSocket для отправки и получения сообщений в чате
+    subscribe:
+      summary: Подписка на получение сообщений в указанном чате
+      operationId: receiveMessage
+      message:
+        $ref: '#/components/messages/ChatMessage'
+    publish:
+      summary: Отправка сообщения в указанный чат
+      operationId: sendMessage
+      message:
+        $ref: '#/components/messages/ChatMessage'
+
+components:
+  messages:
+    ChatMessage:
+      description: Личное сообщение, отправляемое или получаемое в чате
+      payload:
+        $ref: '#/components/schemas/ChatMessageSchema'
+
+  schemas:
+    ChatMessageSchema:
+      type: object
+      properties:
+        sessionId:
+          type: string
+          description: Уникальный идентификатор сессии пользователя для аутентификации
+          example: "session_1234567890abcdef"
+        message:
+          type: string
+          description: Текст сообщения
+          example: "Здравствуйте, возьмете мою собачку?"
+        timestamp:
+          type: string
+          format: date-time
+          description: Время отправки сообщения.
+          example: "2024-11-18T12:34:56Z"
+
+    ErrorSchema:
+      description: Детали ошибки при выполнении операций
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Код ошибки, аналог HTTP-кода
+          example: 400
+        message:
+          type: string
+          description: Сообщение об ошибке.
+          example: "Неверный формат сообщения"
+
+tags:
+  - name: Личный чат
+    description: Операции, связанные с личным чатом

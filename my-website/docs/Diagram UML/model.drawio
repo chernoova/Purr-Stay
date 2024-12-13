@@ -1,3 +1,7 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36" scale="1" border="0" version="24.8.6" pages="2">
+<diagram name="Общая диаграмма" id="G_nNjhbYJAKCIl4bXQrk">
+<mxGraphModel dx="2804" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<root>
 <mxCell id="0"/>
 <mxCell id="1" parent="0"/>
 <mxCell id="nxAZWsbltNgFDeP3juEl-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="nxAZWsbltNgFDeP3juEl-1" target="nxAZWsbltNgFDeP3juEl-15" edge="1">
@@ -362,7 +366,7 @@
 </mxGraphModel>
 </diagram>
 <diagram id="FOfEVQTcQo5jWsNTylBy" name="Wireframe">
-<mxGraphModel dx="2333" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxGraphModel dx="2103" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
 <root>
 <mxCell id="0"/>
 <mxCell id="1" parent="0"/>
@@ -957,19 +961,19 @@
 </Array>
 </mxGeometry>
 </mxCell>
-<mxCell id="ontQ0EL1ywzfDc0BTjrJ-137" value="<b>/pet</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+<mxCell id="ontQ0EL1ywzfDc0BTjrJ-137" value="<b>/application/pet</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
 <mxGeometry x="70" y="170" width="270" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="ontQ0EL1ywzfDc0BTjrJ-138" value="<b>/pet/card/{id}</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+<mxCell id="ontQ0EL1ywzfDc0BTjrJ-138" value="<b>/application/pet/card</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
 <mxGeometry x="870" y="170" width="230" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="ontQ0EL1ywzfDc0BTjrJ-139" value="<b style="">/booking</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+<mxCell id="ontQ0EL1ywzfDc0BTjrJ-139" value="<b style="">/application/booking</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
 <mxGeometry x="1749" y="170" width="161" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="7dWm4lEtM0vnwswyHQPo-1" value="<b>/pet_sitter</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+<mxCell id="7dWm4lEtM0vnwswyHQPo-1" value="<b>/application/pet_sitter</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
 <mxGeometry x="2560" y="188.5" width="270" height="30" as="geometry"/>
 </mxCell>
-<mxCell id="7dWm4lEtM0vnwswyHQPo-2" value="<b>/pet_sitter/card/{id}</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+<mxCell id="7dWm4lEtM0vnwswyHQPo-2" value="<b>/application/pet_sitter/card</b>" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
 <mxGeometry x="3380" y="168" width="270" height="30" as="geometry"/>
 </mxCell>
 </root>

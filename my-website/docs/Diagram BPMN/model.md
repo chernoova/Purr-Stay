@@ -1,4 +1,7 @@
-Для выполнения домашнего задания необходимо было спроектировать процессы в нотации BPMN, создать DMN-диаграмму
+---
+title: BPMN диаграммы
+sidebar_position: 1
+---
 
 ## Event Storming
 
@@ -88,7 +91,7 @@
 
 [Критерии модерации отзывов (5).dmn](Моделирование+процессов+в+BPMN+a2977028-9ff2-4fa7-9781-467c210219d1/Критерии+модерации+отзывов++5+.dmn)
 
-```Plain Text
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Check_Red_Words" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="957e002" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
   <decision id="Decision_0xeq9r2" name="Red Words">
